@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /care/
+
+Sitemap: https://example.github.io/sitemap.xml

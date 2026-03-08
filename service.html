@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервисный хаб — МДЖ</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">Мебель для жизни</a>
+        <nav class="main-nav">
+          <a href="resheniya.html">Решения</a>
+          <a href="process.html">Процесс и стоимость</a>
+          <a href="o-nas.html">О нас</a>
+          <a href="kommercheskaya-mebel.html">Коммерческая мебель</a>
+          <a href="blog.html">Блог</a>
+          <a href="service.html">Сервис</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1>/service — сервисный хаб клиентов</h1>
+      <div class="two-col">
+        <article class="card">
+          <h2>Уход за мебелью</h2>
+          <p>Инструкции по материалам: МДФ, ЛДСП, массив, стекло, зеркало.</p>
+          <p><a class="btn btn-outline" href="care/kitchen/index.html">Кухня</a> <a class="btn btn-outline" href="care/wardrobe/index.html">Шкаф/гардеробная</a></p>
+        </article>
+        <article class="card">
+          <h2>Вызвать мастера</h2>
+          <input class="input" placeholder="Имя" />
+          <input class="input" placeholder="Telegram или телефон" />
+          <button class="btn btn-primary">Отправить</button>
+        </article>
+      </div>
+      <section class="section">
+        <article class="card">
+          <h2>Подарить скидку другу</h2>
+          <p>Введите имя и номер заказа, получите персональный промокод.</p>
+          <button data-generate-promo class="btn btn-outline">Получить промокод</button>
+          <p data-promo-output class="muted"></p>
+        </article>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

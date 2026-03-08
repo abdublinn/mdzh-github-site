@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Решения — Мебель для жизни</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">Мебель для жизни</a>
+        <nav class="main-nav">
+          <a href="resheniya.html">Решения</a>
+          <a href="process.html">Процесс и стоимость</a>
+          <a href="o-nas.html">О нас</a>
+          <a href="kommercheskaya-mebel.html">Коммерческая мебель</a>
+          <a href="blog.html">Блог</a>
+          <a href="service.html">Сервис</a>
+        </nav>
+        <div class="header-actions">
+          <a data-telegram class="btn btn-primary" href="#">Написать в Telegram</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="page-title">
+        <h1>Наши проекты</h1>
+        <p class="muted">Фильтруйте по типу мебели и сегменту B2C/B2B.</p>
+      </div>
+
+      <input id="searchInput" class="input" placeholder="Поиск по названию или описанию" />
+
+      <div class="filters">
+        <button data-filter data-group="type" data-value="Кухня" class="btn btn-outline">Кухня</button>
+        <button data-filter data-group="type" data-value="Шкаф" class="btn btn-outline">Шкаф</button>
+        <button data-filter data-group="type" data-value="Гардеробная" class="btn btn-outline">Гардеробная</button>
+        <button data-filter data-group="type" data-value="Детская" class="btn btn-outline">Детская</button>
+        <button data-filter data-group="segment" data-value="b2c" class="btn btn-outline">B2C</button>
+        <button data-filter data-group="segment" data-value="b2b" class="btn btn-outline">B2B</button>
+        <button id="clearFilters" class="btn btn-primary">Сбросить все</button>
+      </div>
+
+      <p id="resultsCount" class="muted"></p>
+      <section class="projects-grid section" id="projectsGrid"></section>
+    </main>
+
+    <a class="floating-cta floating-telegram" data-telegram href="#">Написать</a>
+    <a class="floating-cta floating-phone" data-phone href="#">Позвонить</a>
+
+    <div id="quizBackdrop" class="quiz-backdrop hidden">
+      <div class="quiz-modal">
+        <div class="quiz-head">
+          <strong>Квиз: ориентир стоимости</strong>
+          <button id="quizCloseTop" class="btn btn-outline">X</button>
+        </div>
+        <div class="quiz-body">
+          <div class="progress"><div id="quizProgress"></div></div>
+          <div id="quizBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
